@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="DocumentListTypeCVC" reuseIdentifier="DocumentListTypeCVC" id="jZ3-TW-xOD" customClass="DocumentListTypeCVC" customModule="PracticalTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="235" height="191"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="235" height="191"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K3s-uE-D0r">
+                        <rect key="frame" x="8" y="8" width="219" height="175"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9OS-3I-xNn">
+                        <rect key="frame" x="8" y="8" width="219" height="175"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eGH-aA-EAT">
+                                <rect key="frame" x="0.0" y="0.0" width="219" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.60784313729999995" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0DC-Pj-U6K"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="klz-O3-cLg">
+                                <rect key="frame" x="8" y="17.5" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="NJr-Vd-OU5"/>
+                                    <constraint firstAttribute="height" constant="80" id="hKi-f5-vMR"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sbs-n1-K8W">
+                                <rect key="frame" x="93" y="50" width="126" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="0x7-0D-oZa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="klz-O3-cLg" firstAttribute="centerY" secondItem="eGH-aA-EAT" secondAttribute="centerY" constant="32.5" id="E34-sC-cNJ"/>
+                            <constraint firstItem="klz-O3-cLg" firstAttribute="leading" secondItem="9OS-3I-xNn" secondAttribute="leading" constant="8" id="Q0g-pR-5gj"/>
+                            <constraint firstAttribute="trailing" secondItem="Sbs-n1-K8W" secondAttribute="trailing" id="RCg-dt-3qg"/>
+                            <constraint firstItem="eGH-aA-EAT" firstAttribute="top" secondItem="9OS-3I-xNn" secondAttribute="top" id="YqJ-mM-jho"/>
+                            <constraint firstItem="eGH-aA-EAT" firstAttribute="leading" secondItem="9OS-3I-xNn" secondAttribute="leading" id="ZS1-b6-o7Y"/>
+                            <constraint firstItem="Sbs-n1-K8W" firstAttribute="top" secondItem="eGH-aA-EAT" secondAttribute="bottom" id="bKv-Lf-kVw"/>
+                            <constraint firstAttribute="trailing" secondItem="eGH-aA-EAT" secondAttribute="trailing" id="jjk-9s-knG"/>
+                            <constraint firstItem="Sbs-n1-K8W" firstAttribute="leading" secondItem="klz-O3-cLg" secondAttribute="trailing" constant="5" id="luQ-gO-Q7P"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="K3s-uE-D0r" firstAttribute="bottom" secondItem="9OS-3I-xNn" secondAttribute="bottom" id="BcD-ls-No5"/>
+                <constraint firstAttribute="trailing" secondItem="9OS-3I-xNn" secondAttribute="trailing" constant="8" id="FqR-dT-H2O"/>
+                <constraint firstItem="K3s-uE-D0r" firstAttribute="leading" secondItem="9OS-3I-xNn" secondAttribute="leading" id="LcM-oB-8zm"/>
+                <constraint firstItem="9OS-3I-xNn" firstAttribute="top" secondItem="jZ3-TW-xOD" secondAttribute="top" constant="8" id="Mho-Hc-E62"/>
+                <constraint firstItem="K3s-uE-D0r" firstAttribute="trailing" secondItem="9OS-3I-xNn" secondAttribute="trailing" id="TKf-oF-qZV"/>
+                <constraint firstItem="9OS-3I-xNn" firstAttribute="leading" secondItem="jZ3-TW-xOD" secondAttribute="leading" constant="8" id="VLl-6M-Nbg"/>
+                <constraint firstAttribute="bottom" secondItem="9OS-3I-xNn" secondAttribute="bottom" constant="8" id="YTe-ZG-B8J"/>
+                <constraint firstItem="K3s-uE-D0r" firstAttribute="top" secondItem="9OS-3I-xNn" secondAttribute="top" id="zDt-uH-Ffw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Bgk-7h-8V3"/>
+            <size key="customSize" width="235" height="191"/>
+            <connections>
+                <outlet property="imgUser" destination="klz-O3-cLg" id="ESi-0d-qVe"/>
+                <outlet property="lblName" destination="Sbs-n1-K8W" id="ukd-Cq-2cj"/>
+                <outlet property="viewMain" destination="9OS-3I-xNn" id="hfF-Bm-5l8"/>
+                <outlet property="viewPublished" destination="eGH-aA-EAT" id="Qi8-p3-eB3"/>
+                <outlet property="viewShadow" destination="K3s-uE-D0r" id="vvm-ce-B4d"/>
+            </connections>
+            <point key="canvasLocation" x="-7.9710144927536239" y="76.674107142857139"/>
+        </collectionViewCell>
+    </objects>
+</document>
